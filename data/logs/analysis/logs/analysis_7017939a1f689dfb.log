@@ -1,0 +1,5 @@
+2025-12-05 00:06:15 | INFO     | Initializing EcosystemAnalyzer v3.0 AI-ENHANCED (Run ID: 7017939a)
+2025-12-05 00:06:15 | DEBUG    | Starting: Data Loading & Validation
+2025-12-05 00:06:15 | INFO     | Loaded 72400 species data points from species_logs.csv
+2025-12-05 00:06:15 | ERROR    | Missing required columns: {'total_births', 'total_kills'}
+2025-12-05 00:06:15 | ERROR    | Failed: Data Loading & Validation - Missing required columns: {'total_births', 'total_kills'}

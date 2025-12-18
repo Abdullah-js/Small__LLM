@@ -1,0 +1,62 @@
+2025-12-05 00:08:59 | INFO     | Initializing EcosystemAnalyzer v3.0 AI-ENHANCED (Run ID: 7323990f)
+2025-12-05 00:08:59 | DEBUG    | Starting: Data Loading & Validation
+2025-12-05 00:08:59 | INFO     | Loaded 1500 species data points from species_logs.csv
+2025-12-05 00:08:59 | DEBUG    | Columns: ['step', 'prey_population', 'predator_population', 'total_population', 'total_kills', 'total_births', 'avg_prey_energy', 'avg_predator_energy', 'avg_prey_fitness', 'avg_predator_fitness', 'max_prey_generation', 'max_predator_generation', 'food_available', 'is_day', 'weather']
+2025-12-05 00:08:59 | DEBUG    | Step range: 0 - 1499
+2025-12-05 00:08:59 | DEBUG    | Starting: Agent Data Loading
+2025-12-05 00:08:59 | INFO     | 🤖 Loaded 173,400 agent-level records from simulation_logs.csv
+2025-12-05 00:08:59 | INFO     |    └── 146 unique agents tracked
+2025-12-05 00:08:59 | INFO     |    └── 10 different action types recorded
+2025-12-05 00:08:59 | DEBUG    | Completed: Agent Data Loading (0.20s)
+2025-12-05 00:08:59 | DEBUG    | Computed derived metrics for all columns
+2025-12-05 00:08:59 | DEBUG    | Completed: Data Loading & Validation (0.23s)
+2025-12-05 00:08:59 | INFO     | ──────────────────────────────────────────────────
+2025-12-05 00:08:59 | INFO     |   ECOSYSTEM ANALYSIS v3.0 - AI ENHANCED
+2025-12-05 00:08:59 | INFO     | ──────────────────────────────────────────────────
+2025-12-05 00:08:59 | INFO     | Source: species_logs.csv
+2025-12-05 00:08:59 | INFO     | Mode: STANDARD
+2025-12-05 00:08:59 | DEBUG    | Starting: Metrics Computation
+2025-12-05 00:08:59 | INFO     | Computing simulation metrics...
+2025-12-05 00:08:59 | DEBUG    | Computing advanced statistical metrics...
+2025-12-05 00:08:59 | INFO     | Computed 24 metrics
+2025-12-05 00:08:59 | DEBUG    | Completed: Metrics Computation (0.01s)
+2025-12-05 00:08:59 | DEBUG    | Starting: Anomaly Detection
+2025-12-05 00:08:59 | INFO     | Running anomaly detection...
+2025-12-05 00:08:59 | INFO     | Detected 0 anomalies
+2025-12-05 00:08:59 | DEBUG    | Completed: Anomaly Detection (0.05s)
+2025-12-05 00:08:59 | INFO     | Generating species dashboard...
+2025-12-05 00:08:59 | DEBUG    | Starting: Dashboard Generation
+2025-12-05 00:08:59 | INFO     | Generating visualization dashboard...
+2025-12-05 00:09:02 | DEBUG    | Completed: Dashboard Generation (2.23s)
+2025-12-05 00:09:02 | DEBUG    | Starting: ML Analysis
+2025-12-05 00:09:02 | INFO     | ──────────────────────────────────────────────────
+2025-12-05 00:09:02 | INFO     |   ML/AI ANALYSIS v3.0
+2025-12-05 00:09:02 | INFO     | ──────────────────────────────────────────────────
+2025-12-05 00:09:02 | INFO     | Analyzing 173,400 agent records...
+2025-12-05 00:09:02 | INFO     | Training survival prediction model...
+2025-12-05 00:09:02 | INFO     |   Model accuracy: 97.95%
+2025-12-05 00:09:02 | INFO     |   Precision: 0.00%
+2025-12-05 00:09:02 | INFO     |   Top feature: health
+2025-12-05 00:09:02 | INFO     | Analyzing agent behaviors...
+2025-12-05 00:09:02 | INFO     |   Found 4 behavior clusters
+2025-12-05 00:09:02 | INFO     | Analyzing genetic traits...
+2025-12-05 00:09:02 | INFO     |   Optimal predator traits: speed=4.23
+2025-12-05 00:09:02 | INFO     |   Optimal prey traits: speed=3.52
+2025-12-05 00:09:02 | INFO     | Running time series analysis...
+2025-12-05 00:09:02 | INFO     |   Detected primary cycle: 375.0 steps
+2025-12-05 00:09:02 | DEBUG    | Completed: ML Analysis (0.21s)
+2025-12-05 00:09:02 | INFO     | Generating AI insights...
+2025-12-05 00:09:02 | INFO     |   Generated 9 insights
+2025-12-05 00:09:02 | INFO     | Generating ML dashboard...
+2025-12-05 00:09:02 | INFO     | Generating ML dashboard...
+2025-12-05 00:09:02 | INFO     | Saved ML dashboard: ml_dashboard_20251205_000902.png
+2025-12-05 00:09:02 | INFO     | ──────────────────────────────────────────────────
+2025-12-05 00:09:02 | INFO     |   EXPORTING DATA
+2025-12-05 00:09:02 | INFO     | ──────────────────────────────────────────────────
+2025-12-05 00:09:02 | INFO     | Saved report: analysis_report_20251205_000902.json
+2025-12-05 00:09:02 | INFO     | Saved ML report: ml_analysis_report_20251205_000902.json
+2025-12-05 00:09:02 | DEBUG    | Starting: Data Export
+2025-12-05 00:09:02 | INFO     | Saved enhanced data: enhanced_species_logs_20251205_000902.csv
+2025-12-05 00:09:02 | DEBUG    | Completed: Data Export (0.02s)
+2025-12-05 00:09:02 | INFO     | Run logged to history (ID: 7323990f)
+2025-12-05 00:09:02 | INFO     | Analysis completed successfully in 0:00:03

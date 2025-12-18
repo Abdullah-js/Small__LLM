@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "source_file": "data/logs/species_logs.csv",
+    "generated_at": "2025-12-04T22:08:02.221798",
+    "analysis_mode": "STANDARD"
+  },
+  "simulation_overview": {
+    "duration_steps": 369,
+    "final_prey_population": 0,
+    "final_predator_population": 0,
+    "final_total_population": 0
+  },
+  "population_peaks": {
+    "peak_prey": 133,
+    "peak_prey_step": 57,
+    "peak_predator": 12,
+    "peak_predator_step": 0
+  },
+  "events": {
+    "total_kills": 22,
+    "total_births": 75,
+    "kill_efficiency": 0.016308
+  },
+  "extinction_events": {
+    "prey_extinction_step": 369,
+    "predator_extinction_step": 278,
+    "total_extinction_step": 369
+  },
+  "growth_dynamics": {
+    "avg_prey_growth_rate": -1.3343,
+    "avg_predator_growth_rate": -0.8387,
+    "prey_volatility": 6.6368,
+    "predator_volatility": 6.458
+  },
+  "ecosystem_health": {
+    "stability_score": 43.3,
+    "lotka_volterra_fit": 0.6918,
+    "ecosystem_resilience": 12.2,
+    "biodiversity_index": 31.84,
+    "extinction_risk_score": 100.0
+  },
+  "advanced_metrics": {
+    "prey_carrying_capacity": 132.0,
+    "predator_carrying_capacity": 12.0,
+    "population_oscillation_period": 0.0,
+    "trophic_efficiency": 6.1276
+  }
+}

@@ -1,0 +1,70 @@
+2025-12-04 23:07:09 | INFO     | Initializing EcosystemAnalyzer v3.0 AI-ENHANCED (Run ID: dc0655cd)
+2025-12-04 23:07:09 | DEBUG    | Starting: Data Loading & Validation
+2025-12-04 23:07:09 | INFO     | Loaded 370 species data points from species_logs.csv
+2025-12-04 23:07:09 | DEBUG    | Columns: ['step', 'prey_population', 'predator_population', 'total_population', 'total_kills', 'total_births']
+2025-12-04 23:07:09 | DEBUG    | Step range: 0 - 369
+2025-12-04 23:07:09 | DEBUG    | Starting: Agent Data Loading
+2025-12-04 23:07:09 | INFO     | 🤖 Loaded 23,446 agent-level records from simulation_logs.csv
+2025-12-04 23:07:09 | INFO     |    └── 180 unique agents tracked
+2025-12-04 23:07:09 | INFO     |    └── 7 different action types recorded
+2025-12-04 23:07:09 | DEBUG    | Completed: Agent Data Loading (0.03s)
+2025-12-04 23:07:09 | DEBUG    | Computed derived metrics for all columns
+2025-12-04 23:07:09 | DEBUG    | Completed: Data Loading & Validation (0.04s)
+2025-12-04 23:07:09 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:09 | INFO     |   ECOSYSTEM ANALYSIS v3.0 - AI ENHANCED
+2025-12-04 23:07:09 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:09 | INFO     | Source: species_logs.csv
+2025-12-04 23:07:09 | INFO     | Mode: STANDARD
+2025-12-04 23:07:09 | DEBUG    | Starting: Metrics Computation
+2025-12-04 23:07:09 | INFO     | Computing simulation metrics...
+2025-12-04 23:07:09 | DEBUG    | Computing advanced statistical metrics...
+2025-12-04 23:07:09 | WARNING  | High extinction risk detected: 100.0%
+2025-12-04 23:07:09 | INFO     | Computed 24 metrics
+2025-12-04 23:07:09 | DEBUG    | Completed: Metrics Computation (0.00s)
+2025-12-04 23:07:09 | DEBUG    | Starting: Anomaly Detection
+2025-12-04 23:07:09 | INFO     | Running anomaly detection...
+2025-12-04 23:07:09 | WARNING  | [population_crash] Prey population crashed from 1 to 0 (100.0% drop)
+2025-12-04 23:07:09 | WARNING  | [population_crash] Predator population crashed from 2 to 0 (100.0% drop)
+2025-12-04 23:07:09 | DEBUG    | [oscillation_damping] Population oscillations are damping - system approaching equilibrium
+2025-12-04 23:07:09 | INFO     | [equilibrium_shift] Ecosystem equilibrium shifted: prey:predator ratio changed from 18.5:1 to 3.4:1
+2025-12-04 23:07:09 | INFO     | Detected 4 anomalies
+2025-12-04 23:07:09 | DEBUG    | Completed: Anomaly Detection (0.01s)
+2025-12-04 23:07:09 | INFO     | Generating species dashboard...
+2025-12-04 23:07:09 | DEBUG    | Starting: Dashboard Generation
+2025-12-04 23:07:09 | INFO     | Generating visualization dashboard...
+2025-12-04 23:07:10 | DEBUG    | Completed: Dashboard Generation (1.11s)
+2025-12-04 23:07:10 | DEBUG    | Starting: ML Analysis
+2025-12-04 23:07:10 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:10 | INFO     |   ML/AI ANALYSIS v3.0
+2025-12-04 23:07:10 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:10 | INFO     | Analyzing 23,446 agent records...
+2025-12-04 23:07:10 | INFO     | Training survival prediction model...
+2025-12-04 23:07:10 | INFO     |   Model accuracy: 99.44%
+2025-12-04 23:07:10 | INFO     |   Precision: 0.00%
+2025-12-04 23:07:10 | INFO     |   Top feature: health
+2025-12-04 23:07:10 | INFO     | Analyzing agent behaviors...
+2025-12-04 23:07:10 | INFO     |   Found 4 behavior clusters
+2025-12-04 23:07:10 | INFO     | Analyzing genetic traits...
+2025-12-04 23:07:10 | INFO     |   Optimal predator traits: speed=0.75
+2025-12-04 23:07:10 | INFO     |   Optimal prey traits: speed=0.51
+2025-12-04 23:07:10 | INFO     | Running time series analysis...
+2025-12-04 23:07:10 | INFO     |   Detected primary cycle: 123.3 steps
+2025-12-04 23:07:10 | DEBUG    | Completed: ML Analysis (0.13s)
+2025-12-04 23:07:10 | INFO     | Generating AI insights...
+2025-12-04 23:07:10 | CRITICAL | Analysis failed: 'float' object has no attribute 'get'
+2025-12-04 23:07:10 | DEBUG    | Traceback (most recent call last):
+  File "/Users/emiralakus/nopainnogain/analyze_simulation.py", line 2735, in run_full_analysis
+    insights = self.generate_ai_insights() if ml_results else []
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emiralakus/nopainnogain/analyze_simulation.py", line 2243, in generate_ai_insights
+    all_insights.extend(self.ai_insights.generate_genetic_insights(combined_genetic))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emiralakus/nopainnogain/analyze_simulation.py", line 817, in generate_genetic_insights
+    beneficial = [t for t, d in opt.items() if d.get('significant') and d.get('optimal_direction') == 'higher']
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emiralakus/nopainnogain/analyze_simulation.py", line 817, in <listcomp>
+    beneficial = [t for t, d in opt.items() if d.get('significant') and d.get('optimal_direction') == 'higher']
+                                               ^^^^^
+AttributeError: 'float' object has no attribute 'get'
+
+2025-12-04 23:07:10 | INFO     | Run logged to history (ID: dc0655cd)

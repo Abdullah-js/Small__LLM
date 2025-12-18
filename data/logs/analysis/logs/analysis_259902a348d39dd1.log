@@ -1,0 +1,63 @@
+2025-12-04 23:04:54 | INFO     | Initializing EcosystemAnalyzer v3.0 AI-ENHANCED (Run ID: 259902a3)
+2025-12-04 23:04:54 | DEBUG    | Starting: Data Loading & Validation
+2025-12-04 23:04:54 | INFO     | Loaded 370 species data points from species_logs.csv
+2025-12-04 23:04:54 | DEBUG    | Columns: ['step', 'prey_population', 'predator_population', 'total_population', 'total_kills', 'total_births']
+2025-12-04 23:04:54 | DEBUG    | Step range: 0 - 369
+2025-12-04 23:04:54 | DEBUG    | Starting: Agent Data Loading
+2025-12-04 23:04:54 | INFO     | 🤖 Loaded 23,446 agent-level records from simulation_logs.csv
+2025-12-04 23:04:54 | INFO     |    └── 180 unique agents tracked
+2025-12-04 23:04:54 | INFO     |    └── 7 different action types recorded
+2025-12-04 23:04:54 | DEBUG    | Completed: Agent Data Loading (0.06s)
+2025-12-04 23:04:54 | DEBUG    | Computed derived metrics for all columns
+2025-12-04 23:04:54 | DEBUG    | Completed: Data Loading & Validation (0.09s)
+2025-12-04 23:04:54 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:04:54 | INFO     |   ECOSYSTEM ANALYSIS v3.0 - AI ENHANCED
+2025-12-04 23:04:54 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:04:54 | INFO     | Source: species_logs.csv
+2025-12-04 23:04:54 | INFO     | Mode: STANDARD
+2025-12-04 23:04:54 | DEBUG    | Starting: Metrics Computation
+2025-12-04 23:04:54 | INFO     | Computing simulation metrics...
+2025-12-04 23:04:54 | DEBUG    | Computing advanced statistical metrics...
+2025-12-04 23:04:54 | WARNING  | High extinction risk detected: 100.0%
+2025-12-04 23:04:54 | INFO     | Computed 24 metrics
+2025-12-04 23:04:54 | DEBUG    | Completed: Metrics Computation (0.01s)
+2025-12-04 23:04:54 | DEBUG    | Starting: Anomaly Detection
+2025-12-04 23:04:54 | INFO     | Running anomaly detection...
+2025-12-04 23:04:54 | WARNING  | [population_crash] Prey population crashed from 1 to 0 (100.0% drop)
+2025-12-04 23:04:54 | WARNING  | [population_crash] Predator population crashed from 2 to 0 (100.0% drop)
+2025-12-04 23:04:54 | DEBUG    | [oscillation_damping] Population oscillations are damping - system approaching equilibrium
+2025-12-04 23:04:54 | INFO     | [equilibrium_shift] Ecosystem equilibrium shifted: prey:predator ratio changed from 18.5:1 to 3.4:1
+2025-12-04 23:04:54 | INFO     | Detected 4 anomalies
+2025-12-04 23:04:54 | DEBUG    | Completed: Anomaly Detection (0.02s)
+2025-12-04 23:04:54 | INFO     | Generating species dashboard...
+2025-12-04 23:04:54 | DEBUG    | Starting: Dashboard Generation
+2025-12-04 23:04:54 | INFO     | Generating visualization dashboard...
+2025-12-04 23:04:55 | DEBUG    | Completed: Dashboard Generation (1.02s)
+2025-12-04 23:04:55 | DEBUG    | Starting: ML Analysis
+2025-12-04 23:04:55 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:04:55 | INFO     |   ML/AI ANALYSIS v3.0
+2025-12-04 23:04:55 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:04:55 | INFO     | Analyzing 23,446 agent records...
+2025-12-04 23:04:55 | INFO     | Training survival prediction model...
+2025-12-04 23:04:55 | INFO     |   Model accuracy: 99.44%
+2025-12-04 23:04:55 | INFO     |   Precision: 0.00%
+2025-12-04 23:04:55 | INFO     |   Top feature: health
+2025-12-04 23:04:55 | INFO     | Analyzing agent behaviors...
+2025-12-04 23:04:55 | WARNING  | Behavior analysis failed: 'BehaviorAnalyzer' object has no attribute 'cluster_agents'
+2025-12-04 23:04:55 | INFO     | Analyzing genetic traits...
+2025-12-04 23:04:55 | WARNING  | Genetic analysis failed: 'GeneticAnalyzer' object has no attribute 'find_optimal_traits'
+2025-12-04 23:04:55 | INFO     | Running time series analysis...
+2025-12-04 23:04:55 | WARNING  | Time series analysis failed: Unknown format code 'f' for object of type 'str'
+2025-12-04 23:04:55 | DEBUG    | Completed: ML Analysis (0.07s)
+2025-12-04 23:04:55 | INFO     | Generating AI insights...
+2025-12-04 23:04:55 | CRITICAL | Analysis failed: 'AIInsightsGenerator' object has no attribute 'generate_all_insights'
+2025-12-04 23:04:55 | DEBUG    | Traceback (most recent call last):
+  File "/Users/emiralakus/nopainnogain/analyze_simulation.py", line 2696, in run_full_analysis
+    insights = self.generate_ai_insights() if ml_results else []
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/emiralakus/nopainnogain/analyze_simulation.py", line 2221, in generate_ai_insights
+    insights = self.ai_insights.generate_all_insights(combined_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AIInsightsGenerator' object has no attribute 'generate_all_insights'
+
+2025-12-04 23:04:55 | INFO     | Run logged to history (ID: 259902a3)

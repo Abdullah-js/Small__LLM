@@ -1,0 +1,39 @@
+2025-12-04 22:08:25 | INFO     | Initializing EcosystemAnalyzer v2.0 (Run ID: 9d413a45)
+2025-12-04 22:08:25 | DEBUG    | Starting: Data Loading & Validation
+2025-12-04 22:08:25 | INFO     | Loaded 370 data points from species_logs.csv
+2025-12-04 22:08:25 | DEBUG    | Columns: ['step', 'prey_population', 'predator_population', 'total_population', 'total_kills', 'total_births']
+2025-12-04 22:08:25 | DEBUG    | Step range: 0 - 369
+2025-12-04 22:08:25 | DEBUG    | Computed derived metrics for all columns
+2025-12-04 22:08:25 | DEBUG    | Completed: Data Loading & Validation (0.01s)
+2025-12-04 22:08:25 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 22:08:25 | INFO     |   ECOSYSTEM ANALYSIS v2.0
+2025-12-04 22:08:25 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 22:08:25 | INFO     | Source: species_logs.csv
+2025-12-04 22:08:25 | INFO     | Mode: STANDARD
+2025-12-04 22:08:25 | DEBUG    | Starting: Metrics Computation
+2025-12-04 22:08:25 | INFO     | Computing simulation metrics...
+2025-12-04 22:08:25 | DEBUG    | Computing advanced statistical metrics...
+2025-12-04 22:08:25 | WARNING  | High extinction risk detected: 100.0%
+2025-12-04 22:08:25 | INFO     | Computed 24 metrics
+2025-12-04 22:08:25 | DEBUG    | Completed: Metrics Computation (0.00s)
+2025-12-04 22:08:25 | DEBUG    | Starting: Anomaly Detection
+2025-12-04 22:08:25 | INFO     | Running anomaly detection...
+2025-12-04 22:08:25 | WARNING  | [population_crash] Prey population crashed from 1 to 0 (100.0% drop)
+2025-12-04 22:08:25 | WARNING  | [population_crash] Predator population crashed from 2 to 0 (100.0% drop)
+2025-12-04 22:08:25 | DEBUG    | [oscillation_damping] Population oscillations are damping - system approaching equilibrium
+2025-12-04 22:08:25 | INFO     | [equilibrium_shift] Ecosystem equilibrium shifted: prey:predator ratio changed from 18.5:1 to 3.4:1
+2025-12-04 22:08:25 | INFO     | Detected 4 anomalies
+2025-12-04 22:08:25 | DEBUG    | Completed: Anomaly Detection (0.01s)
+2025-12-04 22:08:25 | INFO     | Generating visualizations...
+2025-12-04 22:08:25 | DEBUG    | Starting: Dashboard Generation
+2025-12-04 22:08:25 | INFO     | Generating visualization dashboard...
+2025-12-04 22:08:26 | DEBUG    | Completed: Dashboard Generation (1.16s)
+2025-12-04 22:08:26 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 22:08:26 | INFO     |   EXPORTING DATA
+2025-12-04 22:08:26 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 22:08:26 | INFO     | Saved report: analysis_report_20251204_220826.json
+2025-12-04 22:08:26 | DEBUG    | Starting: Data Export
+2025-12-04 22:08:26 | INFO     | Saved enhanced data: enhanced_species_logs_20251204_220826.csv
+2025-12-04 22:08:26 | DEBUG    | Completed: Data Export (0.00s)
+2025-12-04 22:08:26 | INFO     | Run logged to history (ID: 9d413a45)
+2025-12-04 22:08:26 | INFO     | Analysis completed successfully in 0:00:01

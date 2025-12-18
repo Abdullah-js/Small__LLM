@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "source_file": "/Users/emiralakus/nopainnogain/data/logs/species_logs.csv",
+    "generated_at": "2025-12-05T00:09:02.836326",
+    "analysis_mode": "STANDARD"
+  },
+  "simulation_overview": {
+    "duration_steps": 1499,
+    "final_prey_population": 79,
+    "final_predator_population": 28,
+    "final_total_population": 107
+  },
+  "population_peaks": {
+    "peak_prey": 105,
+    "peak_prey_step": 447,
+    "peak_predator": 28,
+    "peak_predator_step": 1486
+  },
+  "events": {
+    "total_kills": 37,
+    "total_births": 54,
+    "kill_efficiency": 0.001295
+  },
+  "extinction_events": {
+    "prey_extinction_step": null,
+    "predator_extinction_step": null,
+    "total_extinction_step": null
+  },
+  "growth_dynamics": {
+    "avg_prey_growth_rate": -0.0005,
+    "avg_predator_growth_rate": 0.0581,
+    "prey_volatility": 0.276,
+    "predator_volatility": 0.5777
+  },
+  "ecosystem_health": {
+    "stability_score": 92.13,
+    "lotka_volterra_fit": 0.3455,
+    "ecosystem_resilience": 6.85,
+    "biodiversity_index": 65.75,
+    "extinction_risk_score": 0.0
+  },
+  "advanced_metrics": {
+    "prey_carrying_capacity": 103.0,
+    "predator_carrying_capacity": 27.0,
+    "population_oscillation_period": 0.0,
+    "trophic_efficiency": 20.4687
+  }
+}

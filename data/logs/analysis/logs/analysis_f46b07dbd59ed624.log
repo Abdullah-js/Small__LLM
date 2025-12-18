@@ -1,0 +1,34 @@
+2025-12-04 23:03:17 | INFO     | Initializing EcosystemAnalyzer v3.0 AI-ENHANCED (Run ID: f46b07db)
+2025-12-04 23:03:17 | DEBUG    | Starting: Data Loading & Validation
+2025-12-04 23:03:17 | INFO     | Loaded 370 species data points from species_logs.csv
+2025-12-04 23:03:17 | DEBUG    | Columns: ['step', 'prey_population', 'predator_population', 'total_population', 'total_kills', 'total_births']
+2025-12-04 23:03:17 | DEBUG    | Step range: 0 - 369
+2025-12-04 23:03:17 | DEBUG    | Starting: Agent Data Loading
+2025-12-04 23:03:17 | INFO     | 🤖 Loaded 23,446 agent-level records from simulation_logs.csv
+2025-12-04 23:03:17 | INFO     |    └── 180 unique agents tracked
+2025-12-04 23:03:17 | INFO     |    └── 7 different action types recorded
+2025-12-04 23:03:17 | DEBUG    | Completed: Agent Data Loading (0.04s)
+2025-12-04 23:03:17 | DEBUG    | Computed derived metrics for all columns
+2025-12-04 23:03:17 | DEBUG    | Completed: Data Loading & Validation (0.06s)
+2025-12-04 23:03:17 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:03:17 | INFO     |   ECOSYSTEM ANALYSIS v3.0 - AI ENHANCED
+2025-12-04 23:03:17 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:03:17 | INFO     | Source: species_logs.csv
+2025-12-04 23:03:17 | INFO     | Mode: STANDARD
+2025-12-04 23:03:17 | DEBUG    | Starting: Metrics Computation
+2025-12-04 23:03:17 | INFO     | Computing simulation metrics...
+2025-12-04 23:03:17 | DEBUG    | Computing advanced statistical metrics...
+2025-12-04 23:03:17 | WARNING  | High extinction risk detected: 100.0%
+2025-12-04 23:03:17 | INFO     | Computed 24 metrics
+2025-12-04 23:03:17 | DEBUG    | Completed: Metrics Computation (0.01s)
+2025-12-04 23:03:17 | DEBUG    | Starting: Anomaly Detection
+2025-12-04 23:03:17 | INFO     | Running anomaly detection...
+2025-12-04 23:03:17 | WARNING  | [population_crash] Prey population crashed from 1 to 0 (100.0% drop)
+2025-12-04 23:03:17 | WARNING  | [population_crash] Predator population crashed from 2 to 0 (100.0% drop)
+2025-12-04 23:03:17 | DEBUG    | [oscillation_damping] Population oscillations are damping - system approaching equilibrium
+2025-12-04 23:03:17 | INFO     | [equilibrium_shift] Ecosystem equilibrium shifted: prey:predator ratio changed from 18.5:1 to 3.4:1
+2025-12-04 23:03:17 | INFO     | Detected 4 anomalies
+2025-12-04 23:03:17 | DEBUG    | Completed: Anomaly Detection (0.01s)
+2025-12-04 23:03:17 | INFO     | Generating species dashboard...
+2025-12-04 23:03:17 | DEBUG    | Starting: Dashboard Generation
+2025-12-04 23:03:17 | INFO     | Generating visualization dashboard...

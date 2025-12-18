@@ -1,0 +1,67 @@
+2025-12-04 23:07:39 | INFO     | Initializing EcosystemAnalyzer v3.0 AI-ENHANCED (Run ID: a41e73e1)
+2025-12-04 23:07:39 | DEBUG    | Starting: Data Loading & Validation
+2025-12-04 23:07:39 | INFO     | Loaded 370 species data points from species_logs.csv
+2025-12-04 23:07:39 | DEBUG    | Columns: ['step', 'prey_population', 'predator_population', 'total_population', 'total_kills', 'total_births']
+2025-12-04 23:07:39 | DEBUG    | Step range: 0 - 369
+2025-12-04 23:07:39 | DEBUG    | Starting: Agent Data Loading
+2025-12-04 23:07:39 | INFO     | 🤖 Loaded 23,446 agent-level records from simulation_logs.csv
+2025-12-04 23:07:39 | INFO     |    └── 180 unique agents tracked
+2025-12-04 23:07:39 | INFO     |    └── 7 different action types recorded
+2025-12-04 23:07:39 | DEBUG    | Completed: Agent Data Loading (0.04s)
+2025-12-04 23:07:39 | DEBUG    | Computed derived metrics for all columns
+2025-12-04 23:07:39 | DEBUG    | Completed: Data Loading & Validation (0.05s)
+2025-12-04 23:07:39 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:39 | INFO     |   ECOSYSTEM ANALYSIS v3.0 - AI ENHANCED
+2025-12-04 23:07:39 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:39 | INFO     | Source: species_logs.csv
+2025-12-04 23:07:39 | INFO     | Mode: STANDARD
+2025-12-04 23:07:39 | DEBUG    | Starting: Metrics Computation
+2025-12-04 23:07:39 | INFO     | Computing simulation metrics...
+2025-12-04 23:07:39 | DEBUG    | Computing advanced statistical metrics...
+2025-12-04 23:07:39 | WARNING  | High extinction risk detected: 100.0%
+2025-12-04 23:07:39 | INFO     | Computed 24 metrics
+2025-12-04 23:07:39 | DEBUG    | Completed: Metrics Computation (0.00s)
+2025-12-04 23:07:39 | DEBUG    | Starting: Anomaly Detection
+2025-12-04 23:07:39 | INFO     | Running anomaly detection...
+2025-12-04 23:07:39 | WARNING  | [population_crash] Prey population crashed from 1 to 0 (100.0% drop)
+2025-12-04 23:07:39 | WARNING  | [population_crash] Predator population crashed from 2 to 0 (100.0% drop)
+2025-12-04 23:07:39 | DEBUG    | [oscillation_damping] Population oscillations are damping - system approaching equilibrium
+2025-12-04 23:07:39 | INFO     | [equilibrium_shift] Ecosystem equilibrium shifted: prey:predator ratio changed from 18.5:1 to 3.4:1
+2025-12-04 23:07:39 | INFO     | Detected 4 anomalies
+2025-12-04 23:07:39 | DEBUG    | Completed: Anomaly Detection (0.01s)
+2025-12-04 23:07:39 | INFO     | Generating species dashboard...
+2025-12-04 23:07:39 | DEBUG    | Starting: Dashboard Generation
+2025-12-04 23:07:39 | INFO     | Generating visualization dashboard...
+2025-12-04 23:07:40 | DEBUG    | Completed: Dashboard Generation (1.22s)
+2025-12-04 23:07:40 | DEBUG    | Starting: ML Analysis
+2025-12-04 23:07:40 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:40 | INFO     |   ML/AI ANALYSIS v3.0
+2025-12-04 23:07:40 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:40 | INFO     | Analyzing 23,446 agent records...
+2025-12-04 23:07:40 | INFO     | Training survival prediction model...
+2025-12-04 23:07:40 | INFO     |   Model accuracy: 99.44%
+2025-12-04 23:07:40 | INFO     |   Precision: 0.00%
+2025-12-04 23:07:40 | INFO     |   Top feature: health
+2025-12-04 23:07:40 | INFO     | Analyzing agent behaviors...
+2025-12-04 23:07:40 | INFO     |   Found 4 behavior clusters
+2025-12-04 23:07:40 | INFO     | Analyzing genetic traits...
+2025-12-04 23:07:40 | INFO     |   Optimal predator traits: speed=0.75
+2025-12-04 23:07:40 | INFO     |   Optimal prey traits: speed=0.51
+2025-12-04 23:07:40 | INFO     | Running time series analysis...
+2025-12-04 23:07:40 | INFO     |   Detected primary cycle: 123.3 steps
+2025-12-04 23:07:40 | DEBUG    | Completed: ML Analysis (0.13s)
+2025-12-04 23:07:40 | INFO     | Generating AI insights...
+2025-12-04 23:07:40 | INFO     |   Generated 8 insights
+2025-12-04 23:07:40 | INFO     | Generating ML dashboard...
+2025-12-04 23:07:40 | INFO     | Generating ML dashboard...
+2025-12-04 23:07:41 | INFO     | Saved ML dashboard: ml_dashboard_20251204_230740.png
+2025-12-04 23:07:41 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:41 | INFO     |   EXPORTING DATA
+2025-12-04 23:07:41 | INFO     | ──────────────────────────────────────────────────
+2025-12-04 23:07:41 | INFO     | Saved report: analysis_report_20251204_230741.json
+2025-12-04 23:07:41 | INFO     | Saved ML report: ml_analysis_report_20251204_230741.json
+2025-12-04 23:07:41 | DEBUG    | Starting: Data Export
+2025-12-04 23:07:41 | INFO     | Saved enhanced data: enhanced_species_logs_20251204_230741.csv
+2025-12-04 23:07:41 | DEBUG    | Completed: Data Export (0.01s)
+2025-12-04 23:07:41 | INFO     | Run logged to history (ID: a41e73e1)
+2025-12-04 23:07:41 | INFO     | Analysis completed successfully in 0:00:02
